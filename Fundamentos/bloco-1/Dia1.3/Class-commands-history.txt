@@ -1,0 +1,146 @@
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+open downloads
+cd /home/downloads
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+#apt-get install pavucontrol
+sudo apt-get install pavucontrol
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+sudo apt install curl # version 7.81.0
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install 14
+sudo snap install slack --classic
+sudo apt-get update
+sudo apt-get install git
+git --version
+git config --global user.name "EderBorella"
+git config --global user.email "ederlopesborella@gmail.com"
+git config --global user.name EderBorella
+git config --global user.email ederlopesborella@gmail.com
+touch unix_tests
+mkdir unix_tests
+rm unix_tests
+mkdir unix_tests
+cd unix_tests
+touch trybe.yxy
+rm trybe.yxy
+touch trybe.txt
+cp trybe.txt trybe_backup.txt
+mv trybe.txt super_trybe.txt
+mkdir backup
+mv trybe_backup.txt backup
+ls
+ls -a
+cd backup
+ls
+cd ..
+ls
+mkdir backup2
+cd backup2
+cd ..
+cd backup
+ls
+mv trybe_backup.txt backup2
+cd ..
+cd backup2
+ls
+cd ..
+cd backup
+ls
+mv backup2 trybe_backup.txt
+ls
+mv trybe_backup.txt unix_tests/backup2
+mv trybe_backup.txt /unix_tests/backup2
+mv trybe_backup.txt /backup2
+mv trybe_backup.txt ~unix_tests/backup2
+mv trybe_backup.txt ..
+ls
+cd..
+cd ..
+ls
+mv trybe_backup.txt backup2
+cd backup2
+ls
+mv trybe_backup backup/
+mv trybe_backup.txt backup/
+mv trybe_backup.txt unix_tests/backup/
+
+mv trybe_backup.txt ~/unix_tests/backup/
+ls
+cd ~/unix_tests/backup/
+ls
+mv trybe_backup.txt ~/backup2/
+mv trybe_backup.txt ~unix_tests/backup2/
+mv trybe_backup.txt ~/unix_tests/backup2/
+cd ~/unix_tests/backup2/
+ls
+cd ..
+rm backup
+rmdir backup
+ls
+mv backup2 backup
+ls
+pwd
+ls -a
+rmdir backup
+rm backup
+rm backup -d
+rm -d bakcup
+rm -d backup
+rm -r backup
+list
+l
+ls
+rm super_trybe.txt
+fa
+fad
+fa
+a
+reset
+touch skills.txt
+cat > skills.txt
+ls
+head skills.txt
+tail skills.txt
+head 5 skills.txt
+head -5 skills.txt
+tail -4 skills.txt
+rm .txt
+rm *.txt
+ls
+curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+ls
+cat countries.txt
+less -grep 'Zambia' countries.txt
+cat -grep 'Brazil' countries.txt
+grep 'Brazil' countries.txt
+grep 'razil' countries.txt
+grep 'brazil' countries.txt
+cat > phrases.txt
+grep '' -fox phrases.txt
+-exec grep '' phrases.txt
+cat phrases.txt -exec grep -li "fox"
+cat phrases.txt -exec grep -li "fox" {}
+cat phrases.txt -exec grep -li 'fox' {}
+cat phrases.txt -exec grep 'fox' {}
+cat phrases.txt
+less phrases.txt grep 'fox'
+less phrases.txt
+grep 'fox phrases.txt
+find ~/unix_tests/phrases.txt -name fox
+find ~/unix_tests/phrases.txt -name fox
+
+
+cd ~/unix_tests
+grep 'fox phrases.txt
+find ~/unix_tests/phrases.txt -name fox
+cd ~/unix_tests/
+find phrases.txt -exec grep -l "fox" {} \;
+grep -v 'fox' phrases.txt
+wc phrases.txt
+touch empty.tbt
+touch empty.pdf
+ls
+ls -*.txt
+ls *.txt
+ls *.tbt *.txt
+man ls
