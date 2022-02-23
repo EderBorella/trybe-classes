@@ -1,0 +1,19 @@
+1 - Pegar a sacola, carteira e a chave que se encontra em frente a porta.
+2 - Colocar a carteira e a chave dentro do bolso.
+3 - Pegar a lista de compras que está dentro da sacola.
+4 - Sair de casa pela porta da frente.
+5 - Andar até a esquina sul e entrar na feira.
+6 - Conferir a lista.
+7 - Lista: Banana, tomate e acerola.
+8 - Andar até banca de frutas e cumprimentar o vendedor.
+9 - Continuar na banca de frutas, se tiver acerola, pegar 10.
+10 - Continuar na banca de frutas, se tiver tomate, pegar 3.
+11 - Se tiver banana, pagar na carteira o valor solicitado.
+12 - Se tiver tomate, pegar na carteira o valor solicitado.
+13 - Se tiver acerola, pegar na carteira o valor solicitado.
+14 - Dar valor para o vendedor.
+15 - Colocar frutas dentro da sacola.
+16 - Se despedir do vendedor.
+17 - Andar até a casa.
+18 - Parar em frente a porta e abrir a porta com a chave.
+19 - Entrar em casa.
