@@ -1,0 +1,29 @@
+div:hover{
+    border: 5px solid black;
+}
+div:nth-child(3){
+    color: red;
+    text-decoration: line-through;
+}
+div:nth-child(4){
+    color: orange;
+    text-decoration: underline;
+}
+div:nth-child(5){
+    color: yellow;
+    text-decoration: overline;
+}
+div:nth-child(6){
+    color: rgb(82, 21, 21);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div:nth-child(7){
+    color: rgb(255, 146, 146);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+div:nth-child(odd){
+    font-style: italic;
+
+}
+
