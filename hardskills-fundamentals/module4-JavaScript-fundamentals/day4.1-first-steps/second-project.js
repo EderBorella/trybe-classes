@@ -6,8 +6,8 @@ const patientInfo = {
 };
 const patientEmail = 'ana@email.com';
 
-console.log(typeof patientAge)
-console.log(typeof patientId)
-console.log(typeof isEnrolled)
-console.log(typeof patientInfo)
-console.log(typeof patientEmail)
+console.log(typeof patientAge);
+console.log(typeof patientId);
+console.log(typeof isEnrolled);
+console.log(typeof patientInfo);
+console.log(typeof patientEmail);
