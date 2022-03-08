@@ -73,3 +73,14 @@ let odds = [];
 
 // Exercicio 8:
 
+// for(i = 1; i < 26; i += 1){
+//     odds.push(i)
+// }
+// console.log(odds)
+
+// Exercicio 9:
+
+// for(i = 1; i < 26; i += 1){
+//     odds.push(i / 2)
+// }
+// console.log(odds)
