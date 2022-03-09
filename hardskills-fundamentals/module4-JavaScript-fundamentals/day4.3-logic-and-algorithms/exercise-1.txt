@@ -1,0 +1,72 @@
+Here I will describle the steps for dressing to a party.
+
+1 - Identify which kind of party is. (partyKind)
+2 - identify what is the dresscode.  (partyDresscode)
+3 - Identify the date of the party.  (partyDate)
+4 - Select possible clothes according to dresscode, party type and weather in the party date from my cloths.   (possibleClothes and myClothes)
+5 - In possible clothes, asks my wife to select the best one.
+6 - Put the selected clothes in bed, for use after the shower. (partyClothes)
+7 - Dress with the party clothes.
+
+Describle exercises from day before in a logic manner:
+
+1 - 
+- Add the array.
+- Create a for loop to navigate all the values in the array.
+- Create a console.log for each loop, showing all the values from the array.
+
+2 -
+- Add the array.
+- Create a variable to contain the sum of the array elements.
+- Create a for loop to navigate each position in the array.
+- For each loop for the above loop, add the value navigated in the variable sum.
+- console.log the variable sum.
+
+3 - 
+- Add the array.
+- Create a variable to contain the sum of the array elements.
+- Create a for loop to navigate each position in the array.
+- For each loop for the above loop, add the value navigated in the variable sum.
+- console.log the variable sum divided by the number of elements in the array.
+
+4 -
+- Add the array.
+- Create a variable to contain the sum of the array elements.
+- Create a for loop to navigate each position in the array.
+- For each loop for the above loop, add the value navigated in the variable sum.
+- Create a if conditional, with the condition if sum plus than 20, displays "Value greater than 20.", else "value lower than 20."
+
+5 - 
+- Add the array.
+- Create a variable to contain the first element of the array.
+- Create a for loop to navigate the array.
+- Create a if condition to check if the element in the loop is greater than the one in the variable.
+- If positive, substitute the element in the variable.
+- After the loop, print the variable created, that now shows the greatest element in the array.
+
+6 -
+- Add the array.
+- Create a array to contain the odd numbers.
+- Create a for loop to navigate the array.
+- Create a if condition, if the number rest is different from 0, add the number to the odds array.
+- Create a if condition, if the odds array have at least 1 element, print the odds array. Else, prints "No odd number in the array."
+
+7 -
+- Add the array.
+- Create a variable to contain the first element of the array.
+- Create a for loop to navigate the array.
+- Create a if condition to check if the element in the loop is lower than the one in the variable.
+- If positive, substitute the element in the variable.
+- After the loop, print the variable created, that now shows the lowest element in the array.
+
+8 -
+- Create an empty array.
+- Create a loop to start in 1 and stops in 25.
+- For each loop, add the number in the created array.
+- After the loop ends, print the array.
+
+9 -
+- Create an empty array.
+- Create a loop to start in 1 and stops in 25.
+- For each loop, add the number in the created array.
+- After the loop ends, print the array divided by 2.
