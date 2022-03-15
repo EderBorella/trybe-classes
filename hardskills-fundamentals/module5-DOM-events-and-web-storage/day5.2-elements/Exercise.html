@@ -93,7 +93,22 @@
         img1.className = 'small-image';
         ref4.appendChild(img1)
 
-    </script>
+        let ref5 = document.querySelector('.right-content');
+        let list1 = document.createElement('ul')
+        ref5.appendChild(list1);
+        let ref6 = document.querySelector('.right-content').firstElementChild
+
+        let listNumb = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+        
+        for(i = 0; i < listNumb.length; i += 1){
+            let number = listNumb[i];
+
+            let lista = document.createElement('li')
+            lista.innerText = number;
+            ref6.appendChild(lista)
+        }
+
+</script>
 </body>
 
 </html>
