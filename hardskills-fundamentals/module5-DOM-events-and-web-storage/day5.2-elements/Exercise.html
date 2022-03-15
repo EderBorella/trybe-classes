@@ -57,11 +57,15 @@
   </head>
   <body>
     <script>
-      let tituloRef = document.getElementsByTagName('body')[0];
+      let ref = document.getElementsByTagName('body')[0];
       let titulo = document.createElement('h1');
       titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
+      ref.appendChild(titulo)
 
-      tituloRef.appendChild(titulo)
+      let mainCont = document.createElement('main');
+      mainCont.className = 'main-content';
+      ref.appendChild(mainCont)
+
 
     </script>
   </body>
