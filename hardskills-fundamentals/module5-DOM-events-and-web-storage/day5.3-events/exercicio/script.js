@@ -79,7 +79,7 @@ let montiSexta = document.getElementsByClassName('friday')
 
 function sextaFun() {
 
-let days = [4, 11, 18, 25]
+    let days = [4, 11, 18, 25]
 
     if (montiSexta[0].innerText == 'Sexta-feira') {
         for (i3 = 0; i3 <= montiSexta.length + 1; i3 += 1) {
@@ -91,5 +91,21 @@ let days = [4, 11, 18, 25]
         }
     }
 }
-
 document.getElementById('btn-friday').addEventListener('click', sextaFun)
+
+function zoomIn(loop) {
+    loop.target.style.fontSize = '30px'
+}
+
+for (i4 = 0; i4 < document.getElementsByClassName('day').length; i4 += 1) {
+    document.getElementsByClassName('day')[i4].addEventListener('mouseover', zoomIn, false)
+}
+
+function zoomOut(loop) {
+    loop.target.style.fontSize = 'larger'
+}
+
+for (i4 = 0; i4 < document.getElementsByClassName('day').length; i4 += 1) {
+    document.getElementsByClassName('day')[i4].addEventListener('mouseout', zoomOut, false)
+}
+
