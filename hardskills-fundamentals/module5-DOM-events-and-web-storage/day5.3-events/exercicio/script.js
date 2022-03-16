@@ -26,12 +26,16 @@ function divDay() {
         dia.className = 'day'
         calen.appendChild(dia)
 
-        if (dezDaysList[i] === 25 || dezDaysList[i] === 24 || dezDaysList[i] === 31) {
+        if (dezDaysList[i] === 25) {
             dia.classList.add('holiday');
-        } else if (dezDaysList[i] === 4 || dezDaysList[i] === 11 || dezDaysList[i] === 18 || dezDaysList[i] === 25) {
+            dia.classList.add('friday');
+        } else if (dezDaysList[i] === 25 || dezDaysList[i] === 24 || dezDaysList[i] === 31) {
+            dia.classList.add('holiday');
+        } else if (dezDaysList[i] === 4 || dezDaysList[i] === 11 || dezDaysList[i] === 18) {
             dia.classList.add('friday');
         }
     }
+
 }
 divDay();
 
@@ -41,7 +45,7 @@ function feriaa(texto) {
     let butao = document.createElement('button');
     butao.innerText = texto;
     montibutao.appendChild(butao)
-    butao.id = 'butferi'
+    butao.id = 'btn-holiday'
 }
 
 feriaa('Feriado')
@@ -60,5 +64,32 @@ function feriaFun() {
         }
     }
 }
+document.getElementById('btn-holiday').addEventListener('click', feriaFun)
 
-document.getElementById('butferi').addEventListener('click', feriaFun)
+function sexto(texto) {
+    let butao2 = document.createElement('button');
+    butao2.innerText = texto;
+    montibutao.appendChild(butao2)
+    butao2.id = 'btn-friday'
+}
+
+sexto('Sexta-feira')
+
+let montiSexta = document.getElementsByClassName('friday')
+
+function sextaFun() {
+
+let days = [4, 11, 18, 25]
+
+    if (montiSexta[0].innerText == 'Sexta-feira') {
+        for (i3 = 0; i3 <= montiSexta.length + 1; i3 += 1) {
+            montiSexta[i3].innerText = days[i3];
+        }
+    } else {
+        for (i2 = 0; i2 <= montiSexta.length; i2 += 1) {
+            montiSexta[i2].innerText = 'Sexta-feira';
+        }
+    }
+}
+
+document.getElementById('btn-friday').addEventListener('click', sextaFun)
