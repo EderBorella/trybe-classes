@@ -34,3 +34,13 @@ function divDay(){
       } 
 }
 divDay();
+
+let montibutao = document.getElementsByClassName('buttons-container')[0]
+
+function feriaa(texto){
+    let butao = document.createElement('button');
+    butao.innerText = texto;
+    montibutao.appendChild(butao)
+}
+
+feriaa('Feriado')
