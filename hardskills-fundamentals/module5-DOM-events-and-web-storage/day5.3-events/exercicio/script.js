@@ -29,7 +29,7 @@ function divDay() {
         if (dezDaysList[i] === 25) {
             dia.classList.add('holiday');
             dia.classList.add('friday');
-        } else if (dezDaysList[i] === 25 || dezDaysList[i] === 24 || dezDaysList[i] === 31) {
+        } else if (dezDaysList[i] === 24 || dezDaysList[i] === 31) {
             dia.classList.add('holiday');
         } else if (dezDaysList[i] === 4 || dezDaysList[i] === 11 || dezDaysList[i] === 18) {
             dia.classList.add('friday');
@@ -39,12 +39,12 @@ function divDay() {
 }
 divDay();
 
-let montibutao = document.getElementsByClassName('buttons-container')[0]
+let montiButao = document.getElementsByClassName('buttons-container')[0]
 
 function feriaa(texto) {
     let butao = document.createElement('button');
     butao.innerText = texto;
-    montibutao.appendChild(butao)
+    montiButao.appendChild(butao)
     butao.id = 'btn-holiday'
 }
 
@@ -69,7 +69,7 @@ document.getElementById('btn-holiday').addEventListener('click', feriaFun)
 function sexto(texto) {
     let butao2 = document.createElement('button');
     butao2.innerText = texto;
-    montibutao.appendChild(butao2)
+    montiButao.appendChild(butao2)
     butao2.id = 'btn-friday'
 }
 
@@ -114,9 +114,37 @@ let tarefas = document.getElementsByClassName('my-tasks')[0]
 let texto = document.getElementById('task-input')
 
 function tarefa() {
-    let tare = document.createElement('spam', ('li'))
-    tare.innerText = texto.value + '\n';
+    let tare = document.createElement('span')
+    tare.innerText = '\n' + texto.value;
+    tare.style.lineHeight = '38px'
+    tare.className = 'teste'
     tarefas.appendChild(tare)
+
 }
 
 document.querySelector('#btn-add').addEventListener('click', tarefa)
+
+function tarefaFundo(cor) {
+    let fundo = document.createElement('div')
+    fundo.style.background = cor;
+    tarefas.appendChild(fundo);
+
+    let xyz = document.querySelector('.my-tasks div')
+
+    xyz.addEventListener('click', function () {
+        if (xyz.className == '') {
+            xyz.className = 'task selected';
+        } else{
+            xyz.className = '';
+        }
+    })
+}
+
+document.querySelector('#btn-add').addEventListener('click', function () {
+    tarefaFundo('red')
+})
+
+
+
+
+
