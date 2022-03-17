@@ -109,3 +109,14 @@ for (i4 = 0; i4 < document.getElementsByClassName('day').length; i4 += 1) {
     document.getElementsByClassName('day')[i4].addEventListener('mouseout', zoomOut, false)
 }
 
+let tarefas = document.getElementsByClassName('my-tasks')[0]
+
+let texto = document.getElementById('task-input')
+
+function tarefa() {
+    let tare = document.createElement('spam', ('li'))
+    tare.innerText = texto.value + '\n';
+    tarefas.appendChild(tare)
+}
+
+document.querySelector('#btn-add').addEventListener('click', tarefa)
