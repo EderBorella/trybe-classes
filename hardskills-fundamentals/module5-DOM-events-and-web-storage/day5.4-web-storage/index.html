@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor online</title>
+</head>
+
+<body>
+    <h1>Leitor online ajustável!</h1>
+
+    <section class="secTexto">
+        <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel malesuada mi. Fusce sollicitudin
+            elit non bibendum rhoncus. Pellentesque ac facilisis purus. Nam dignissim arcu arcu, at semper dui faucibus
+            congue. Pellentesque maximus pellentesque sem a consequat. In ex odio, malesuada in ultrices eu, tempus
+            vitae purus. Sed venenatis eu nisi vel egestas. Sed aliquam est sed imperdiet tristique. Maecenas tincidunt,
+            lorem in convallis finibus, orci eros consequat nunc, eu volutpat eros nibh in leo. Phasellus sodales
+            maximus ex. Nulla molestie eleifend ligula vel hendrerit. Mauris dignissim metus vitae nulla convallis,
+            vitae pellentesque dolor consequat.
+            <br>
+            Sed placerat, dolor id pretium lacinia, nunc lectus aliquam nisi, eget laoreet enim tellus at felis. Etiam a
+            finibus arcu. Donec placerat augue faucibus tempor venenatis. Integer porttitor augue id mauris pretium
+            ullamcorper. Donec hendrerit, nunc et sollicitudin suscipit, tellus leo imperdiet mauris, ut pretium nibh
+            eros vitae enim. Maecenas vitae orci aliquam, suscipit justo vel, imperdiet tellus. Morbi ac felis in erat
+            vestibulum tempor. Aliquam id lectus id arcu pulvinar accumsan et eget tellus. Vivamus viverra enim arcu, at
+            mattis ipsum sodales gravida. Morbi vel volutpat nulla, sit amet lobortis leo. Aliquam dictum scelerisque
+            ligula a gravida. Quisque tristique felis condimentum tincidunt cursus. Maecenas at egestas nisi. Aenean
+            rutrum vel urna et viverra.
+            <br>
+            Fusce sit amet pretium metus, ut scelerisque tellus. Mauris neque libero, porttitor vel imperdiet sit amet,
+            luctus eget nisl. Praesent aliquet a elit quis maximus. Quisque sed euismod risus, eu viverra mauris.
+            Quisque euismod, elit sit amet feugiat ultricies, purus diam pellentesque lorem, et imperdiet elit urna in
+            lacus. Sed a orci sed eros placerat laoreet sed ac nisl. Sed varius aliquam rhoncus. Nulla hendrerit iaculis
+            justo vel aliquam. Maecenas euismod ante nec augue imperdiet, sed dapibus tellus bibendum. Vestibulum
+            scelerisque sollicitudin leo vitae sagittis. Vivamus rutrum dictum varius. Proin vitae ornare ligula. In
+            venenatis sem velit, eu sodales turpis hendrerit a. Integer at urna eu ipsum volutpat imperdiet. Interdum et
+            malesuada fames ac ante ipsum primis in faucibus.
+            <br>
+            Aliquam pulvinar eleifend ligula a viverra. Sed porta, elit eleifend mollis scelerisque, elit justo semper
+            magna, eget rhoncus metus tellus quis odio. Etiam lacinia, nibh eget imperdiet tristique, nibh ligula
+            lacinia mi, ut varius dolor libero eu enim. Aenean placerat ipsum sit amet iaculis eleifend. Aliquam
+            convallis vestibulum arcu eget maximus. Nullam laoreet metus quis enim semper dapibus. Mauris vitae ipsum ac
+            dolor malesuada auctor. Nam rutrum porttitor tincidunt. Pellentesque ac maximus ante. Nam sed consectetur
+            lacus. Pellentesque nec arcu in leo pharetra blandit ac quis elit. Praesent tempus dui in urna consequat
+            convallis.
+            <br>
+            Praesent imperdiet tortor vel justo viverra, sit amet vestibulum ipsum cursus. Mauris condimentum leo orci,
+            a eleifend lorem fringilla vel. Donec tempor consectetur leo in facilisis. Donec tortor lorem, sollicitudin
+            ut eleifend vel, molestie ut massa. Vivamus faucibus magna ac posuere tempor. Class aptent taciti sociosqu
+            ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas sed blandit nisl, ut sagittis mi.
+        </p>
+    </section>
+    <section class="secOpt">
+        <div><label>Cor de fundo.</label><br><input type="color" id="corTela"><button id="aplicaCor">Aplicar!</button>
+        </div>
+        <div><label>Cor do texto.</label><br><input type="color" id="corTexto"><button id="aplicaCor2">Aplicar!</button>
+        </div>
+        <div><label>Tamanho da fonte.</label><br><input type="number" id="tamanho"><button
+                id="aplicaTam">Aplicar!</button></div>
+        <div><label>Espaçamento.</label><br><input type="number" id="tamLinha"><button id="aplicaTam2">Aplicar!</button>
+        </div>
+        <div>
+            <label>Tipo da fonte.</label><br>
+            <input type="radio" name="fonteFav" id="font1" value="Georgia, serif">
+            <label id="primeira-fonte">Fonte 1</label><br>
+            <input type="radio" name="fonteFav" id="font2" value="arial">
+            <label id="segunda-fonte">Fonte 2</label><br>
+            <input type="radio" name="fonteFav" id="font3" value="'Times New Roman', serif">
+            <label id="terceira-fonte">Fonte 3</label><br>
+            <input id="apFonte" type="button" value="Aplicar fonte">
+        </div>
+        <button id="reset">RESETAR OS ESTILOS</input>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
