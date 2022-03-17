@@ -134,8 +134,19 @@ function tarefaFundo(cor) {
     xyz.addEventListener('click', function () {
         if (xyz.className == '') {
             xyz.className = 'task selected';
-        } else{
+        } else {
             xyz.className = '';
+        }
+    })
+
+    document.querySelector('.days-container').addEventListener('click', function (event) {
+        if (xyz.className == 'task selected') {
+            
+            if (event.target.style.color == cor){
+                event.target.style.color = '';
+            } else{
+                event.target.style.color = cor
+            }
         }
     })
 }
@@ -143,8 +154,4 @@ function tarefaFundo(cor) {
 document.querySelector('#btn-add').addEventListener('click', function () {
     tarefaFundo('red')
 })
-
-
-
-
 
