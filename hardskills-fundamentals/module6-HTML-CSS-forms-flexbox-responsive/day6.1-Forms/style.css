@@ -1,0 +1,21 @@
+main{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 191, 72);
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50;
+    line-height: 30px;
+    padding-top: 45px;
+    border-radius: 10px;
+    border: 10px double rgb(189, 22, 22);
+}
+h1{
+    margin-left: 220px;
+}
+
+button{
+    border: 0;
+    color: white;
+    background-color: brown;
+}
