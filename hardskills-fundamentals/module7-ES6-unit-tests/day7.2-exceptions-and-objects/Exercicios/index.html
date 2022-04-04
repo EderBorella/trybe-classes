@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <p>Informe dois números para realizar a soma:</p>
+  <label for='value1'>Valor 1:</label>
+  <input type='text' id='value1'>
+  <label for='value2'>Valor 2:</label>
+  <input type='text' id='value2'>
+  <button id='button'>Somar</button>
+  <p id='result'></p>
+  <script>
+
+    const verify = () => {
+      if (document.getElementById('value1').value == '' || document.getElementById('value2').value == '') {
+        throw new Error('Insira os 2 numeros');
+      }
+    }
+    const verify2 = () => {
+      const v1 = document.getElementById('value1');
+      const v2 = document.getElementById('value2');
+      if (isNaN(v1.value) || isNaN(v2.value)) {
+        throw new Error('A calculadora só aceita numeros.');
+
+      }
+    }
+
+    const sum = () => {
+      let value1 = document.getElementById('value1').value;
+      let value2 = document.getElementById('value2').value;
+      const button = document.getElementById('button');
+      const result = parseInt(value1) + parseInt(value2);
+      document.getElementById('result').innerHTML = `Resultado: ${result}`;
+    }
+
+    button.addEventListener('click', () => {
+      try {
+        verify();
+        verify2();
+        return sum();
+      } catch (error) {
+        throw error.message;
+      } finally {
+        document.getElementById('value1').value = ''
+        document.getElementById('value2').value = ''
+      }
+    });
+  </script>
+</body>
+
+</html>
