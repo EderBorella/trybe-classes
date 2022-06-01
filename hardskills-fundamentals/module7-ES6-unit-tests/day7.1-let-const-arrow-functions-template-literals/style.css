@@ -1,0 +1,24 @@
+body{
+  background-color: brown;
+}
+
+main{
+  display: flex;
+  flex-flow: column;
+}
+#trigger{
+  padding: 50px 0;
+}
+#counter{
+  margin: 0;
+  font-size: 150px;
+  text-align: center;
+}
+#zerador{
+  padding: 25px 0;
+}
+#message{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let ref = document.getElementsByTagName('body')[0];
+
+        let titulo = document.createElement('h1');
+        titulo.innerText = 'Exercício 5.2 - JavaScript DOM';
+        ref.appendChild(titulo)
+
+        let mainCont = document.createElement('main');
+        mainCont.className = 'main-content';
+        ref.appendChild(mainCont)
+
+        let ref2 = document.querySelector('.main-content');
+        let sec1 = document.createElement('section');
+        sec1.className = 'center-content';
+        ref2.appendChild(sec1)
+
+        let ref3 = document.querySelector('.center-content');
+        let text = document.createElement('p');
+        text.innerText = 'Sometimes learn something new can be really scary. But fear not, we are together.';
+        ref3.appendChild(text)
+
+        let sec2 = document.createElement('section');
+        sec2.className = 'left-content';
+        ref2.appendChild(sec2)
+
+        let sec3 = document.createElement('section');
+        sec3.className = 'right-content';
+        ref2.appendChild(sec3);
+
+        let ref4 = document.querySelector('.left-content');
+        let img1 = document.createElement('img');
+        img1.src = "https://picsum.photos/200";
+        img1.className = 'small-image';
+        ref4.appendChild(img1)
+
+        let ref5 = document.querySelector('.right-content');
+        let list1 = document.createElement('ul')
+        ref5.appendChild(list1);
+        let ref6 = document.querySelector('.right-content').firstElementChild
+
+        let listNumb = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+        
+        for(i = 0; i < listNumb.length; i += 1){
+            let number = listNumb[i];
+
+            let lista = document.createElement('li')
+            lista.innerText = number;
+            ref6.appendChild(lista)
+        }
+
+        let minTit1 = document.createElement('h3');
+        let minTit2 = document.createElement('h3');
+        let minTit3 = document.createElement('h3');
+
+        ref2.appendChild(minTit1)
+        ref2.appendChild(minTit2)
+        ref2.appendChild(minTit3)
+
+        titulo.className = 'title';
+
+        minTit1.className = 'description'
+        minTit2.className = 'description'
+        minTit3.className = 'description'
+
+        ref2.removeChild(ref2.children[1])
+
+        document.querySelector('.right-content').style.marginRight = 'auto';
+
+        document.querySelector('.center-content').style.background = 'green';
+
+        document.querySelector('.right-content ul').lastElementChild.remove()
+        let rm1 = document.querySelector('.right-content ul')
+        rm1.removeChild(rm1.lastElementChild)
+
+</script>
+</body>
+
+</html>

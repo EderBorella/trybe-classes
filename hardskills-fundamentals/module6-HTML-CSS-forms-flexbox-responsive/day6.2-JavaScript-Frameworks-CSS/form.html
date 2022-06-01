@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class='container w-75'>
+        <h1 class="display-1">TrybeTrip</h1>
+        <form id="form-trybe" method="GET">
+            <fieldset>
+                <div class="mb-3">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" minlength="10" maxlength="40">
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" minlength="10" maxlength="50">
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="opcao" id="opcao1" class="form-check-input">
+                    <label for="opcao1" class="form-check-label">Cidade</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="opcao" id="opcao2" class="form-check-input">
+                    <label for="opcao2" class="form-check-label">Campo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="opcao" id="opcao3" class="form-check-input">
+                    <label for="opcao3" class="form-check-label">Praia</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="opcao" id="opcao4" class="form-check-input">
+                    <label for="opcao4" class="form-check-label">Montanha</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" name="resposta" id="reposta" cols="30" maxlength="500"
+                        style="height: 100px" placeholder="Sua resposta:"></textarea>
+                    <label for="resposta">Sua resposta:</label>
+                    <br>
+                </div>
+                <div clas="mb-3">
+                    <label for="agendamento">Qual a melhor data para sua viagem?</label>
+                    <br>
+                    <input type="text" id="agendamento">
+                </div>
+                <div class="mb-3">
+                    <br>
+                    <div class="mb-3 form-check">
+                        <label for="concordo1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                        </label>
+                        <input type="checkbox" name="concordo1" id="concordo1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <label for="concordo2">Concordo que imagens das minhas férias poderão ser usadas na divulgação
+                            de
+                            concursos futuros.
+                        </label>
+                        <input type="checkbox" name="concordo2" id="concordo2" value="AceitaFotos">
+                    </div>
+                </div>
+            </fieldset>
+            <br>
+            <div class="d-grid gap-2">
+                <input type="submit" id="enviar" class="btn btn-primary">
+                <button id="limpa" class="btn btn-primary">Apagar</button>
+            </div>
+        </form>
+    </main>
+    <script src="/dist/just-validate.production.min.js"></script>
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

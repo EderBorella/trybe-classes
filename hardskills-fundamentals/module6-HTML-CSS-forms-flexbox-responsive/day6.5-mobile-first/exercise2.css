@@ -1,0 +1,300 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 600px) {
+    body{
+        font-size: small;
+        background-color: rgb(65, 65, 65);
+
+    }
+    header{
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column;
+        background-color: cornflowerblue;
+        width: 100%;
+    }
+    .logo{
+        background-color: rgb(0, 121, 121);
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-basis: 20%;
+    }
+    .logo:hover{
+        background-color: rgb(0, 17, 17);
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-basis: 80%;
+}
+    nav ul{
+        display: flex;
+        flex-flow: row;
+        align-self: center;
+    }
+    nav ul li{
+        margin: 0 50px;
+    }
+    nav ul li:hover{
+        background-color: darkblue;
+        color: white;
+    }
+    .container{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .sides{
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    .aside-one{
+        flex-grow: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: white;
+        font-size: small;
+    }
+    .aside-one ul{
+        padding-left: 5px;
+        font-size: smaller;
+    }
+    .aside-one h2{
+        text-align: center;
+    }
+    .aside-two{
+        display: flex;
+        flex-grow: 2;
+        flex-flow: column nowrap;
+        list-style-position: inside;
+        color: white;
+        justify-content: flex-start;
+        background-color: rgb(0, 121, 121);
+    }
+    .aside-two ul{
+        padding-left: 5px;
+        font-size: smaller;
+    }
+    .aside-two h2{
+        text-align: center;
+    }
+    .main-content{
+        margin: 0 30px;
+        color: white;
+    }
+    footer{
+        background-color: rgb(0, 0, 53);
+        color: antiquewhite;
+        font-size: smaller;
+        font-style: italic;
+        line-height: 15px;
+        padding: 0 25px;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 1300px) {
+    body{
+        font-size: medium;
+        background-color: rgb(65, 65, 65);
+
+    }
+    header{
+        display: flex;
+        justify-content: flex-start;
+        background-color: cornflowerblue;
+        width: 100%;
+    }
+    .logo{
+        background-color: rgb(0, 121, 121);
+        color: white;
+        width: 20%;
+        height: 2%;
+        display: flex;
+        justify-content: center;
+        flex-basis: 20%;
+    }
+    .logo:hover{
+        background-color: rgb(0, 17, 17);
+        color: white;
+        width: 20%;
+        height: 2%;
+        display: flex;
+        justify-content: center;
+        flex-basis: 20%;
+    }
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-basis: 80%;
+}
+    nav ul{
+        display: flex;
+        flex-flow: row;
+        align-self: center;
+    }
+    nav ul li{
+        margin: 0 50px;
+    }
+    nav ul li:hover{
+        background-color: darkblue;
+        color: white;
+    }
+    .container{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .sides{
+        display: flex;
+        justify-content: space-around;
+    }
+    .aside-one{
+        flex-grow: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        list-style-position: inside;
+        background-color: white;
+        font-size: small;
+    }
+    .aside-one h2{
+        text-align: center;
+    }
+    .aside-one ul{
+        align-self: center;
+    }
+    .aside-two{
+        display: flex;
+        flex-grow: 2;
+        flex-flow: column nowrap;
+        list-style-position: inside;
+        color: white;
+        justify-content: center;
+        background-color: rgb(0, 121, 121);
+    }
+    .aside-two h2{
+        text-align: center;
+    }
+    .aside-two ul{
+        align-self: center;
+    }
+    .main-content{
+        margin: 0 80px;
+        color: white;
+    }
+    footer{
+        background-color: rgb(0, 0, 53);
+        color: antiquewhite;
+        font-size: smaller;
+        font-style: italic;
+        line-height: 15px;
+        padding: 0 25px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    body{
+        font-size: large;
+        background-color: rgb(65, 65, 65);
+
+    }
+    header{
+        display: flex;
+        justify-content: flex-start;
+        background-color: cornflowerblue;
+        width: 100%;
+    }
+    .logo{
+        background-color: rgb(0, 121, 121);
+        color: white;
+        width: 20%;
+        height: 2%;
+        display: flex;
+        justify-content: center;
+        flex-basis: 20%;
+    }
+    .logo:hover{
+        background-color: rgb(0, 17, 17);
+        color: white;
+        width: 20%;
+        height: 2%;
+        display: flex;
+        justify-content: center;
+        flex-basis: 20%;
+    }
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-basis: 80%;
+}
+    nav ul{
+        display: flex;
+        flex-flow: row;
+    }
+    nav ul li{
+        margin: 0 50px;
+    }
+    nav ul li:hover{
+        background-color: darkblue;
+        color: white;
+    }
+    .container{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .sides{
+        display: flex;
+        justify-content: space-around;
+    }
+    .aside-one{
+        flex-grow: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        list-style-position: inside;
+        background-color: white;
+    }
+    .aside-one h2{
+        text-align: center;
+    }
+    .aside-one ul{
+        align-self: center;
+    }
+    .aside-two{
+        display: flex;
+        flex-grow: 2;
+        flex-flow: column nowrap;
+        list-style-position: inside;
+        color: white;
+        justify-content: center;
+        background-color: rgb(0, 121, 121);
+    }
+    .aside-two h2{
+        text-align: center;
+    }
+    .aside-two ul{
+        align-self: center;
+    }
+    .main-content{
+        margin: 0 200px;
+        color: white;
+    }
+    footer{
+        background-color: rgb(0, 0, 53);
+        color: antiquewhite;
+        font-size: smaller;
+        font-style: italic;
+        line-height: 15px;
+        padding: 0 25px;
+    }
+}

@@ -1,0 +1,17 @@
+#nomecientifico{
+    font-style: italic;
+}
+.tables, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  img {
+      width: 300px;
+  }
+  .video{
+      float: right;
+  }
+  footer{
+      font-style: italic;
+  }

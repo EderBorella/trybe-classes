@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <h1>TrybeTrip</h1>
+    </header>
+    <main>
+        <form id="form-trybe" action="" method="GET">
+            <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" minlength="10" maxlength="40">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" minlength="10" maxlength="50">
+            <br>
+            <input type="radio" name="opcao" id="opcao1">
+            <label for="opcao1">Cidade</label>
+            <input type="radio" name="opcao" id="opcao2">
+            <label for="opcao1">Campo</label>
+            <input type="radio" name="opcao" id="opcao3">
+            <label for="opcao1">Praia</label>
+            <input type="radio" name="opcao" id="opcao4">
+            <label for="opcao1">Montanha</label>
+            <br>
+            <br>
+            <label for="resposta">Espaço para digitar sua resposta:</label>
+            <br>
+            <textarea name="resposta" id="reposta" cols="30" rows="10" maxlength="500"></textarea>
+            <br>
+            <label for="data">Qual a melhor data para sua viagem?</label>
+            <input type="date" name="data" id="data">
+            <br>
+            <br>
+            <label for="concordo1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            </label>
+            <input type="checkbox" name="concordo1" id="concordo1">
+            <br>
+            <label for="concordo2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            </label>
+            <input type="checkbox" name="concordo2" id="concordo2" value="AceitaFotos" required>
+            </fieldset>
+            <br>
+            <input type="submit" name="submeter" id="enviar">
+            <button id="limpa">Apagar</button>
+        </form>
+    </main>
+    <script src="script2.js"></script>
+</body>
+
+</html>

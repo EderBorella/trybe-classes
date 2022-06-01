@@ -1,0 +1,15 @@
+h1, p{
+    text-align: center;
+}
+.sites:hover{
+    color: white;
+    background-color: black;
+}
+
+ol, ul{
+    text-align: center;
+    list-style: none;
+}
+li{
+    list-style-position: inside;
+}

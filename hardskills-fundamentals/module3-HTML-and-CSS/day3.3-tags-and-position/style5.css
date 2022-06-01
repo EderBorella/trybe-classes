@@ -1,0 +1,48 @@
+ol li:nth-child(even){
+    color: green;
+    font-weight: bolder;
+}
+ol li:nth-child(odd){
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: red;
+}
+h1 {
+    font-size: 40px;
+    border: 1px black solid;
+    width: fit-content;
+}
+
+li{
+    font-size: 20px;
+}
+
+ul:first-of-type li:nth-child(-n+3){
+    color: green;
+}
+ul:first-of-type li:nth-child(n+2):nth-child(-n+3) {
+    background-color: pink;
+    width: fit-content;
+}
+
+ul:last-of-type{
+    font-weight: 900;
+}
+ul:last-of-type li:hover:nth-child(1) a{
+    color: orange;
+}
+ul:last-of-type li:hover:nth-child(2) a{
+    color: green;
+}
+ul:last-of-type li:hover:nth-child(3) a{
+    color: black;
+}
+ul:last-of-type li:hover:nth-child(4) a{
+    color: yellow;
+}
+ul:last-of-type li:hover:nth-child(5) a{
+    color: rgb(41,49,61);
+}
