@@ -1,0 +1,1 @@
+SELECT CONCAT('O projeto ', name, ' precisou de ', hours, ' horas para ser concluído.') AS relatório FROM Scientists.Projects;

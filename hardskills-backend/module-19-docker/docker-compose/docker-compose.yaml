@@ -1,0 +1,37 @@
+version: "3" # Versão do arquivo docker-compose
+services: # Funções que serão criadas dentro do compose. Basicamente containers.
+  frontend: #Nome do service(container)
+    build: frontend/ #build apartir do Dockerfile dentro de frontend/
+    restart: always #reiniciar o servidor caso de erro ou finalize
+    ports: #portas utilizados para comunicação do container com a maquina.
+      - 3000:3000
+    depends_on: #serviço(container) que ele depende para iniciar.
+      - backend
+    volumes: #volume que ele sincroniza entre a maquina e o container.
+      - ./logs:/var/log/frontend
+    networks: #rede virtual que ele conecta dentro do compose.
+      - rede-virtual-1
+  backend:
+    build: backend/
+    restart: always
+    ports:
+      - 3001:3001
+    environment: #configurações de ambiente para este container. Ex: login e senha para acessar, qual é o host desse container.
+      - DB_HOST=database
+    depends_on:
+      - database
+    networks:
+      - rede-virtual-1
+      - rede-virtual-2
+  database:
+    image: betrybe/docker-compose-example-database:v1
+    restart: always
+    volumes:
+      - dados-do-banco:/data/db # nome do disco virtual : caminho no container
+    networks:
+      - rede-virtual-2
+volumes: #Após declarar nos containers que serão usados volumes, preciso criar esses volumes.
+  dados-do-banco:
+networks: #Após declarar nos containers que serão usadas networks, preciso criar essas networks.
+  - rede-virtual-1:
+  - rede-virtual-2:

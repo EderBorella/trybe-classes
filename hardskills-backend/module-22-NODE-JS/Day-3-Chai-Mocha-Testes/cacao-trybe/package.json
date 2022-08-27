@@ -1,0 +1,25 @@
+{
+  "name": "cacao-trybe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "mocha ./tests/integration --exit",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.19"
+  }
+}

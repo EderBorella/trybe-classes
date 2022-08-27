@@ -1,0 +1,1 @@
+SELECT COUNT(address_id) FROM sakila.address GROUP BY city_id;

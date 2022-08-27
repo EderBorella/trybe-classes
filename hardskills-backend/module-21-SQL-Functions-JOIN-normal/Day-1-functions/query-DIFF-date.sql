@@ -1,0 +1,1 @@
+SELECT AVG(DATEDIFF(return_date, rental_date)) FROM sakila.rental;
